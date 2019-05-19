@@ -16,9 +16,6 @@ const startTime = function() {
 // Adding zero
 const checkTime = function(i) {
     if (i < 10) {
-		if (1 === i){
-			i = "0 " + i;
-		}	
         i = "0" + i;
     }
     return i;
