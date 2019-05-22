@@ -32,6 +32,8 @@ src: url("fonts/digital-7/digital-7.ttf");
 .clock_digits {
     color:#fbd300;
     font-family: "Digital-7", Arial, sans-serif;
-    font-size: 35rem;
+    font-size: 25vw;
     display: block;
+	text-shadow:2px 4px 10px #af9401;
+	
 }
