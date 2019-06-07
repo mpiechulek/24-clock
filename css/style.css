@@ -23,17 +23,30 @@ src: url("fonts/digital-7/digital-7.ttf");
 }
 
 .clock_container{
+    width:80%;
+    text-align: center;
+    height:auto;
     left: 50%;
     top: 50%;
     transform: translate(-50%, -50%);
     position: absolute;
 }
 
-.clock_digits {
+.digit {
+    float:left;
     color:#fbd300;
     font-family: "Digital-7", Arial, sans-serif;
-    font-size: 25vw;
+    font-size: 24vw;
+    display: block;
+    width: 13%;
+	text-shadow:2px 4px 10px #af9401;
+}
+
+.clockdots {
+    float:left;
+    color:#fbd300;
+    font-family: "Digital-7", Arial, sans-serif;
+    font-size: 24vw;
     display: block;
 	text-shadow:2px 4px 10px #af9401;
-	
 }

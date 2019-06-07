@@ -1,7 +1,7 @@
 // jshint esversion:6
 
 //Adding time hh:mm:ss
-const startTime = function() {
+const startTime = () => {
     let today = new Date();
     let h = today.getHours();
     let m = today.getMinutes();
@@ -9,12 +9,25 @@ const startTime = function() {
     h = checkTime(h);
     m = checkTime(m);
     s = checkTime(s);
-    document.querySelector('.clock_digits').innerHTML = `${h}:${m}:${s}`;
-    let t = setTimeout(startTime, 500);
+
+    h = h.toString().split('');
+    m = m.toString().split('');
+    s = s.toString().split('');
+
+    // document.querySelector('.clock_digits').innerHTML = `${h}:${m}:${s}`;
+
+    document.querySelector('.digit_1').innerHTML = `${h[0]}`;
+    document.querySelector('.digit_2').innerHTML = `${h[1]}`;
+    document.querySelector('.digit_2').innerHTML = `${m[0]}`;
+    document.querySelector('.digit_4').innerHTML = `${m[1]}`;
+    document.querySelector('.digit_5').innerHTML = `${s[0]}`;
+    document.querySelector('.digit_6').innerHTML = `${s[1]}`;
+
+    const t = setTimeout(startTime, 500);
 };
 
 // Adding zero
-const checkTime = function(i) {
+const checkTime = (i) => {
     if (i < 10) {
         i = "0" + i;
     }
@@ -22,10 +35,9 @@ const checkTime = function(i) {
 };
 
 // loading audio
-const playSound = function() {
+const playSound = () => {
     document.querySelector('.audio').play();
-    let x = setTimeout(playSound, 1);
-    // document.querySelector('.audio').pause();
+    const x = setTimeout(playSound, 1);
 };
 
 playSound();
