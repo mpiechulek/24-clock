@@ -18,7 +18,7 @@ const startTime = () => {
 
     document.querySelector('.digit_1').innerHTML = `${h[0]}`;
     document.querySelector('.digit_2').innerHTML = `${h[1]}`;
-    document.querySelector('.digit_2').innerHTML = `${m[0]}`;
+    document.querySelector('.digit_3').innerHTML = `${m[0]}`;
     document.querySelector('.digit_4').innerHTML = `${m[1]}`;
     document.querySelector('.digit_5').innerHTML = `${s[0]}`;
     document.querySelector('.digit_6').innerHTML = `${s[1]}`;
