@@ -22,6 +22,8 @@ const startTime = () => {
     document.querySelector('.digit_4').innerHTML = `${m[1]}`;
     document.querySelector('.digit_5').innerHTML = `${s[0]}`;
     document.querySelector('.digit_6').innerHTML = `${s[1]}`;
+	
+	console.log("time");
 
     const t = setTimeout(startTime, 500);
 };
